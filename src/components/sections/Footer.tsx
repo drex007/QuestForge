@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Link as LinkIcon, Twitter, SendIcon } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { logo } from "@/assets";
 
 const platformLinks = [
   { text: "NFT Rewards", href: "#rewards" },
@@ -23,8 +24,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <div className="text-primary text-2xl font-bold flex items-center mb-4">
-              <LinkIcon className="mr-2 text-secondary" />
-              <span>Kwesta</span>
+            <img src={logo} alt="" className="w-[30%]" />
             </div>
             <p className="text-muted-foreground mb-6">
               Complete tasks. Earn NFTs. Build your on-chain reputation in the Web3 ecosystem.
