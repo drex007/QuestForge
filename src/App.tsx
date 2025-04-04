@@ -6,18 +6,18 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import {Routes, Route, BrowserRouter} from "react-router-dom"
 
-function Router() {
-  return (
-    <BrowserRouter>
+// function Router() {
+//   return (
+//     <BrowserRouter>
     
-    <Routes>
-      <Route path="/" element={< Home  />} />
-      <Route path="/404" element={<NotFound />} />
-    </Routes>
+//     <Routes>
+//       <Route path="/" element={< Home  />} />
+//       <Route path="/404" element={<NotFound />} />
+//     </Routes>
     
-    </BrowserRouter>
-  );
-}
+//     </BrowserRouter>
+//   );
+// }
 
 function App() {
   return (
