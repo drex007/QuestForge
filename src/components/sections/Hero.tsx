@@ -36,7 +36,7 @@ export function Hero() {
             </div>
           </motion.div>
           
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -50,7 +50,7 @@ export function Hero() {
               <div className="absolute -right-3 -top-3 bg-green-500 text-xs font-bold text-black px-2 py-1 rounded-lg">PROOF OF COMPLETION</div>
               <div className="flex justify-between mb-4">
                 <div>
-                  <h3 className="text-lg font-bold">Developer Quest</h3>
+                  <h3 className="text-lg font-bold"> Quests</h3>
                   <p className="text-xs text-muted-foreground">Completed 3 of 5 tasks</p>
                 </div>
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
@@ -76,31 +76,31 @@ export function Hero() {
                   <div className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center mr-3">
                     <Check className="h-3 w-3 text-white" />
                   </div>
-                  <span className="text-sm">Deploy a smart contract</span>
+                  <span className="text-sm">Follow Kwesta On X</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center mr-3">
                     <Check className="h-3 w-3 text-white" />
                   </div>
-                  <span className="text-sm">Create an NFT collection</span>
+                  <span className="text-sm">Join Our Telegram Channel </span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center mr-3">
                     <Check className="h-3 w-3 text-white" />
                   </div>
-                  <span className="text-sm">Build a dApp frontend</span>
+                  <span className="text-sm">Join Kwesta On Discord</span>
                 </div>
                 <div className="flex items-center opacity-50">
                   <div className="w-5 h-5 rounded-full bg-gray-700 flex items-center justify-center mr-3">
                     <Clock className="h-3 w-3 text-white" />
                   </div>
-                  <span className="text-sm">Integrate with a DAO</span>
+                  <span className="text-sm">Visit The Kwesta Website</span>
                 </div>
                 <div className="flex items-center opacity-50">
                   <div className="w-5 h-5 rounded-full bg-gray-700 flex items-center justify-center mr-3">
                     <Clock className="h-3 w-3 text-white" />
                   </div>
-                  <span className="text-sm">Launch on mainnet</span>
+                  <span className="text-sm">Join Kwesta Airdrop Campaign</span>
                 </div>
               </div>
               
@@ -114,7 +114,7 @@ export function Hero() {
                 </Button>
               </div>
             </motion.div>
-          </motion.div> */}
+          </motion.div>
         </div>
         
         {/* <div className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16">

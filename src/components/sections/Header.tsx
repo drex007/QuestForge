@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Link as LinkIcon, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { logo } from "@/assets";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,18 +14,18 @@ export function Header() {
 
   return (
     <header className="relative w-full bg-background">
-      <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center">
+      <nav className="flex flex-1 container mx-auto px-6 py-4  items-center justify-between">
+        <div className="lg:flex-[0.3] flex items-center">
           <div className="text-primary text-2xl font-bold flex items-center">
-            <LinkIcon className="mr-2 text-secondary" />
-            <span>Kwesta</span>
+            {/* <LinkIcon className="mr-2 text-secondary" /> */}
+           <img src={logo} alt="" className="w-[30%]" />
           </div>
         </div>
         
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex flex-[0.7] items-center space-x-6">
           <a href="#how-it-works" className="hover:text-primary transition-colors">How It Works</a>
-          <a href="#tasks" className="hover:text-primary transition-colors">Tasks</a>
-          <a href="#rewards" className="hover:text-primary transition-colors">Rewards</a>
+          {/* <a href="#tasks" className="hover:text-primary transition-colors">Tasks</a>
+          <a href="#rewards" className="hover:text-primary transition-colors">Rewards</a> */}
           <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
         </div>
         

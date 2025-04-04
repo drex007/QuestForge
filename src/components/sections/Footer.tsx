@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Link as LinkIcon, Twitter, Github, MessageCircle, MessageSquare } from "lucide-react";
+import { Link as LinkIcon, Twitter, SendIcon } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const platformLinks = [
@@ -34,18 +34,18 @@ export function Footer() {
                 <Twitter className="h-5 w-5" />
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <MessageCircle className="h-5 w-5" />
+                <SendIcon className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              {/* <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="h-5 w-5" />
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 <MessageSquare className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
           
-          <div>
+          {/* <div>
             <h3 className="font-bold text-lg mb-4">Platform</h3>
             <ul className="space-y-2">
               {platformLinks.map((link, index) => (
@@ -60,8 +60,8 @@ export function Footer() {
               ))}
             </ul>
           </div>
-          
-          <div>
+           */}
+          {/* <div>
             <h3 className="font-bold text-lg mb-4">Resources</h3>
             <ul className="space-y-2">
               {resourceLinks.map((link, index) => (
@@ -76,7 +76,7 @@ export function Footer() {
               ))}
             </ul>
           </div>
-          
+           */}
 
         </div>
         
@@ -85,7 +85,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Kwesta. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-muted-foreground hover:text-foreground text-sm">
+            {/* <a href="#" className="text-muted-foreground hover:text-foreground text-sm">
               Privacy Policy
             </a>
             <a href="#" className="text-muted-foreground hover:text-foreground text-sm">
@@ -93,7 +93,7 @@ export function Footer() {
             </a>
             <a href="#" className="text-muted-foreground hover:text-foreground text-sm">
               Cookie Policy
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
