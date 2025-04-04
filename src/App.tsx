@@ -22,7 +22,7 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Router />
+     < Home  />
       <Toaster />
     </QueryClientProvider>
   );
