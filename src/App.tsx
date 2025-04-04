@@ -6,18 +6,25 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import {Routes, Route, BrowserRouter} from "react-router-dom"
 
-
-
-function App() {
+function Router() {
   return (
     <BrowserRouter>
     
     <Routes>
-      <Route index element={< Home  />} />
+      <Route path="/" element={< Home  />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     
     </BrowserRouter>
+  );
+}
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+     < Router  />
+      <Toaster />
+    </QueryClientProvider>
   );
 }
 
