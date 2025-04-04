@@ -12,7 +12,7 @@ function Router() {
     
     <Routes>
       <Route path="/" element={< Home  />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="/404" element={<NotFound />} />
     </Routes>
     
     </BrowserRouter>
