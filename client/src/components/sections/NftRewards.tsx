@@ -52,7 +52,7 @@ export function NftRewards() {
   return (
     <section id="rewards" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -116,26 +116,20 @@ export function NftRewards() {
                   <span className={`text-xs ${nft.rarityColor} px-2 py-0.5 rounded-full`}>{nft.rarity}</span>
                 </div>
                 <div className="text-xs text-muted-foreground">
-                  <p>Created by QuestChain</p>
+                  <p>Created by Kwesta</p>
                 </div>
               </div>
             </motion.div>
           ))}
-        </motion.div>
-        
-        <div className="text-center">
-          <Button variant="outline">
-            View Complete Gallery
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </div>
+        </motion.div> */}
+
         
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-24 bg-card rounded-xl overflow-hidden"
+          className="bg-card rounded-xl overflow-hidden"
         >
           <div className="grid md:grid-cols-2">
             <div className="p-8 md:p-12 flex flex-col justify-center">
@@ -153,9 +147,14 @@ export function NftRewards() {
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-3" />
                   <span>Gain access to exclusive communities and events</span>
                 </li>
+                
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-3" />
                   <span>Trade or display your achievement NFTs</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-3" />
+                  <span>Earn Multipliers and reward points from some of your favorite projects</span>
                 </li>
               </ul>
               <Button asChild className="w-full md:w-auto">

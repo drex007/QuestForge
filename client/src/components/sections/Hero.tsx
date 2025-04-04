@@ -20,7 +20,7 @@ export function Hero() {
               Earn <span className="text-secondary">NFT Rewards</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              QuestChain is a Web3 platform that rewards your engagement with unique, collectible NFTs. Learn, participate, and build your on-chain reputation.
+              Kwesta is a Web3 platform that rewards your engagement with unique, collectible NFTs. Learn, participate, and build your on-chain reputation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg">
@@ -32,11 +32,11 @@ export function Hero() {
             </div>
             <div className="mt-8 flex items-center text-muted-foreground text-sm">
               <Shield className="mr-2 h-4 w-4 text-green-500" />
-              <span>100% Secure. No gas fees for task completion.</span>
+              <span>100% Secure. Claim NFTs at very little cost.</span>
             </div>
           </motion.div>
           
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -114,10 +114,10 @@ export function Hero() {
                 </Button>
               </div>
             </motion.div>
-          </motion.div>
+          </motion.div> */}
         </div>
         
-        <div className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16">
+        {/* <div className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16">
           <div className="flex items-center">
             <svg 
               className="h-8 w-8 mr-3" 
@@ -174,7 +174,7 @@ export function Hero() {
             </svg>
             <span className="text-muted-foreground">Arbitrum</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

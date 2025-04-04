@@ -53,7 +53,7 @@ export function HowItWorks() {
             transition={{ duration: 0.6 }}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            How QuestChain Works
+            How Kwesta Works
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -101,7 +101,7 @@ export function HowItWorks() {
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex-1">
-              <h3 className="text-2xl font-bold mb-4">No Gas Fees for Task Completion</h3>
+              <h3 className="text-2xl font-bold mb-4">100% Secure. Claim NFTs at very little cost</h3>
               <p className="text-foreground/80">
                 We use advanced verification methods that don't require gas fees for completing tasks. 
                 You'll only pay gas when claiming your NFT rewards.

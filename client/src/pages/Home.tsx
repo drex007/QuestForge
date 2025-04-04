@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <Hero />
       <HowItWorks />
-      <TaskCategories />
+      {/* <TaskCategories /> */}
       <NftRewards />
       <EarlyAccess />
       <Faq />

@@ -17,7 +17,7 @@ export function Header() {
         <div className="flex items-center">
           <div className="text-primary text-2xl font-bold flex items-center">
             <LinkIcon className="mr-2 text-secondary" />
-            <span>QuestChain</span>
+            <span>Kwesta</span>
           </div>
         </div>
         
@@ -45,7 +45,7 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden absolute w-full bg-background border-t border-border z-10"
+            className="md:hidden absolute w-full bg-background border-t border-border z-20"
           >
             <div className="container mx-auto px-6 py-4 flex flex-col space-y-4">
               <a 

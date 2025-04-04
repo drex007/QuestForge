@@ -33,7 +33,7 @@ const formSchema = z.object({
     message: "Please enter a valid EVM wallet address starting with 0x",
   }),
   twitterFollow: z.boolean().refine((val) => val === true, {
-    message: "You must follow QuestChain on Twitter to join early access.",
+    message: "You must follow Kwesta on Twitter to join early access.",
   }),
   newsletter: z.boolean().optional(),
 });
@@ -159,7 +159,7 @@ export function EarlyAccess() {
                       </FormControl>
                       <div className="space-y-1 leading-none">
                         <FormLabel>
-                          I'll follow <a href="https://twitter.com/QuestChainApp" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@QuestChainApp</a> on Twitter
+                          I'll follow <a href="https://twitter.com/KwestaApp" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@KwestaApp</a> on Twitter
                         </FormLabel>
                         <FormMessage />
                       </div>
