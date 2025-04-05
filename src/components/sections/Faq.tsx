@@ -10,23 +10,23 @@ import { motion } from "framer-motion";
 const faqs = [
   {
     question: "What is Kwesta?",
-    answer: "Kwesta is a Web3 platform that rewards users with NFTs for completing various tasks and quests. These NFTs serve as on-chain proof of your achievements and participation in the Web3 ecosystem."
+    answer: "Kwesta is a platform that rewards users with NFTs, tokens, stablecoins, Discord roles and many more for completing various tasks and quests. These rewards serve as off-chain and on-chain proof of your achievements and participation in different project ecosystems."
   },
   {
-    question: "How do I earn NFT rewards?",
-    answer: "After connecting your wallet, you can browse available quests, complete the required tasks, and claim your NFT reward. The platform verifies your completion before allowing you to mint the NFT to your wallet."
+    question: "How do I earn rewards?",
+    answer: "After connecting your wallet, you can browse available quests, complete the required tasks, and claim your reward. The platform verifies your completion before allowing you to claim your rewards. Quests on our platform will be in collaboration with well-vetted Web3 projects across different niches."
   },
   {
     question: "Are there gas fees for using Kwesta?",
-    answer: "Task completion and verification are gasless operations. You'll only pay gas fees when claiming your NFT rewards, which happens on-chain. We support multiple EVM chains, including those with lower gas fees like Polygon and Optimism."
+    answer: "Task completion and verification are gasless operations. You'll only pay gas fees when claiming your on-chain rewards. We support multiple EVM chains, including those with lower gas fees like Base, Polygon and Optimism. Support for non-EVM chains is coming soon."
   },
   {
     question: "Which wallets are supported?",
-    answer: "Kwesta supports all major EVM-compatible wallets including MetaMask, WalletConnect, Coinbase Wallet, and more. Any wallet that can connect to Ethereum and other EVM chains should work with our platform."
+    answer: "Kwesta supports all major EVM-compatible wallets including MetaMask, Rabby, OKX and more. Any wallet that can connect to Ethereum and other EVM chains should work with our platform."
   },
   {
-    question: "What can I do with my NFT rewards?",
-    answer: "Your NFT rewards represent your achievements and can be used as on-chain proof of your knowledge and engagement. They may grant access to exclusive communities, events, reward points from partner projects, points multipliers or additional features within the Web3 ecosystem. You can also trade your NFTs and display them in your wallet or NFT gallery."
+    question: "What can I do with my rewards?",
+    answer: "Your rewards represent your achievements and can be used as on-chain or off-chain proof of your knowledge and engagement. They may grant access to exclusive communities, events, reward points from partner projects, points multipliers or additional features within the Web3 ecosystem. You can also trade your NFT rewards and display them in your wallet or NFT gallery."
   }
 ];
 
@@ -51,7 +51,7 @@ export function Faq() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-muted-foreground max-w-2xl mx-auto"
           >
-            Everything you need to know about Kwesta and our NFT rewards system.
+            Everything you need to know about Kwesta and our rewards system.
           </motion.p>
         </div>
         

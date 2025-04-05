@@ -6,21 +6,21 @@ const steps = [
   {
     id: "01",
     title: "Connect Your Wallet",
-    description: "Link your EVM compatible wallet to get started. We support MetaMask, WalletConnect, and more.",
+    description: "Link your EVM compatible wallet to get started. We support MetaMask, Rabby, OKX and many other EVM compatible wallets. Support for non-EVM chains coming soon.",
     icon: <Wallet className="h-6 w-6" />,
     color: "text-primary/75"
   },
   {
     id: "02",
     title: "Complete Tasks",
-    description: "Explore and complete tasks across different categories. From basic interactions to advanced challenges.",
+    description: "Explore and complete tasks across different categories. From basic interactions to advanced challenges. Interacting with your favorite projects hev never been easier.",
     icon: <CheckSquare className="h-6 w-6" />,
     color: "text-secondary/75"
   },
   {
     id: "03",
     title: "Earn Unique NFTs",
-    description: "Claim your NFT rewards that serve as on-chain proof of your accomplishments and participation.",
+    description: "Claim your rewards that serve as off-chain and on-chain proof of your accomplishments and participation.",
     icon: <Award className="h-6 w-6" />,
     color: "text-green-500/75"
   }
@@ -62,8 +62,8 @@ export function HowItWorks() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-muted-foreground max-w-2xl mx-auto"
           >
-            Our platform makes earning NFTs simple. Complete tasks, verify your achievements, 
-            and collect unique digital badges that prove your skills and engagement.
+            Our platform makes earning rewards simple. Complete tasks, verify your achievements, 
+            and collect on-chain and off-chain rewards that prove your skills and engagement.
           </motion.p>
         </div>
         

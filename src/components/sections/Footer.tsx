@@ -27,7 +27,7 @@ export function Footer() {
             <img src={logo} alt="" className="w-[30%]" />
             </div>
             <p className="text-muted-foreground mb-6">
-              Complete tasks. Earn NFTs. Build your on-chain reputation in the Web3 ecosystem.
+              Complete tasks. Earn rewards. Build your on-chain and off-chain reputation in the Web3 ecosystem.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">

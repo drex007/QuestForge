@@ -35,6 +35,9 @@ const formSchema = z.object({
   twitterFollow: z.boolean().refine((val) => val === true, {
     message: "You must follow Kwesta on Twitter to join early access.",
   }),
+  telegramFollow: z.boolean().refine((val) => val === true, {
+    message: "You must follow Kwesta on Telegram to join early access.",
+  }),
   newsletter: z.boolean().optional(),
 });
 
@@ -51,6 +54,7 @@ export function EarlyAccess() {
       email: "",
       walletAddress: "",
       twitterFollow: false,
+      telegramFollow: false,
       newsletter: false,
     },
   });
@@ -93,7 +97,7 @@ export function EarlyAccess() {
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Get Early Access</h2>
             <p className="text-muted-foreground">
-              Join our exclusive beta and be the first to earn NFT rewards. Limited spots available.
+              Join our exclusive beta and be the first to earn rewards. Limited spots available.
             </p>
           </div>
           
@@ -159,14 +163,33 @@ export function EarlyAccess() {
                       </FormControl>
                       <div className="space-y-1 leading-none">
                         <FormLabel>
-                          I'll follow <a href="https://twitter.com/KwestaApp" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@KwestaApp</a> on Twitter
+                          I'll follow <a href="https://x.com/KwestaXYZ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@KwestaXYZ</a> on Twitter
                         </FormLabel>
                         <FormMessage />
                       </div>
                     </FormItem>
                   )}
                 />
-                
+              <FormField
+                  control={form.control}
+                  name="telegramFollow"
+                  render={({ field }) => (
+                    <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md">
+                      <FormControl>
+                        <Checkbox
+                          checked={field.value}
+                          onCheckedChange={field.onChange}
+                        />
+                      </FormControl>
+                      <div className="space-y-1 leading-none">
+                        <FormLabel>
+                          I'll follow <a href="https://t.me/KwestaXYZ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Kwesta</a> on Telegram
+                        </FormLabel>
+                        <FormMessage />
+                      </div>
+                    </FormItem>
+                  )}
+                />
                 <FormField
                   control={form.control}
                   name="newsletter"
@@ -178,6 +201,7 @@ export function EarlyAccess() {
                           onCheckedChange={field.onChange}
                         />
                       </FormControl>
+              
                       <div className="space-y-1 leading-none">
                         <FormLabel>
                           Subscribe to newsletter for updates (optional)
@@ -185,7 +209,9 @@ export function EarlyAccess() {
                       </div>
                     </FormItem>
                   )}
+                  
                 />
+                
                 
                 <Button type="submit" className="w-full" disabled={mutation.isPending}>
                   {mutation.isPending ? (

@@ -133,15 +133,15 @@ export function NftRewards() {
         >
           <div className="grid md:grid-cols-2">
             <div className="p-8 md:p-12 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">Build Your On-Chain Reputation</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">Build Your Reputation</h3>
               <p className="text-muted-foreground mb-6">
                 Your NFT badges are more than just collectibles. They represent your expertise, 
-                participation, and achievements in the Web3 ecosystem.
+                participation, and achievements in the different ecosystems.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-3" />
-                  <span>Showcase your Web3 journey and skills</span>
+                  <span>Showcase your on-chain and off-chain reputation</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-3" />

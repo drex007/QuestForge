@@ -17,10 +17,10 @@ export function Hero() {
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Complete <span className="text-primary">Tasks</span>,<br />
-              Earn <span className="text-secondary">NFT Rewards</span>
+              Earn <span className="text-secondary">Rewards!</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              Kwesta is a Web3 platform that rewards your engagement with unique, collectible NFTs. Learn, participate, and build your on-chain reputation.
+              Kwesta is a platform that rewards your engagement with unique, collectible NFTs, tokens, stablecoins, Discord roles, project points and points multipliers, etc. Learn, participate, and build your on-chain reputation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg">
@@ -32,7 +32,7 @@ export function Hero() {
             </div>
             <div className="mt-8 flex items-center text-muted-foreground text-sm">
               <Shield className="mr-2 h-4 w-4 text-green-500" />
-              <span>100% Secure. Claim NFTs at very little cost.</span>
+              <span>100% Secure. Claim rewards at almost no cost.</span>
             </div>
           </motion.div>
           
