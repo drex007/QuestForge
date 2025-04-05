@@ -19,7 +19,7 @@ const steps = [
   },
   {
     id: "03",
-    title: "Earn Unique NFTs",
+    title: "Earn Unique Rewards",
     description: "Claim your rewards that serve as off-chain and on-chain proof of your accomplishments and participation.",
     icon: <Award className="h-6 w-6" />,
     color: "text-green-500/75"

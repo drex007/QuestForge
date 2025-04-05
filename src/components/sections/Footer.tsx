@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Link as LinkIcon, Twitter, SendIcon } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { logo } from "@/assets";
+import { Button } from "../ui/button";
 
 const platformLinks = [
   { text: "NFT Rewards", href: "#rewards" },
@@ -21,7 +22,7 @@ export function Footer() {
   return (
     <footer className="bg-[#0a0f1e] py-12 border-t border-border">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           <div>
             <div className="text-primary text-2xl font-bold flex items-center mb-4">
             <img src={logo} alt="" className="w-[30%]" />
@@ -45,38 +46,18 @@ export function Footer() {
             </div>
           </div>
           
-          {/* <div>
-            <h3 className="font-bold text-lg mb-4">Platform</h3>
-            <ul className="space-y-2">
-              {platformLinks.map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href={link.href} 
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.text}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <div className="flex items-center justify-center lg:justify-end  lg:ml-24">
+        
+           
+            <p onClick={()=>
+            window.open("https://forms.gle/E3TKSTN2ypuiiUVL9")
+
+
+            }> <Button >Apply To Host Your Project Campaign </Button></p>
+        
           </div>
-           */}
-          {/* <div>
-            <h3 className="font-bold text-lg mb-4">Resources</h3>
-            <ul className="space-y-2">
-              {resourceLinks.map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href={link.href} 
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.text}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-           */}
+          
+
 
         </div>
         
@@ -85,15 +66,6 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Kwesta. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            {/* <a href="#" className="text-muted-foreground hover:text-foreground text-sm">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground text-sm">
-              Terms of Service
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground text-sm">
-              Cookie Policy
-            </a> */}
           </div>
         </div>
       </div>
